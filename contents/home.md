@@ -1,19 +1,19 @@
 [![hanfang](https://img.shields.io/badge/hanfang-github-blue?logo=github)](https://github.com/HanfangC)
 
-I am currently an undergraduate student at Shanghai Normal University, actively seeking opportunities for direct Ph.D. admission in Speech,Audio and Music Processing.
+I have received Ph.D. admission from Zhongguancun Academy and the University of Science and Technology of China (USTC), and am expected to enroll in September 2026 and complete by July 2031.
 
 #### Email
-1000530599@smail.shnu.edu.cn
+1000530599@smail.shnu.edu.cn | l-chf@zgci.ac.cn
 
 #### Education
-2023.12-present: B.E., Shanghai Normal University, Unisound-SHNU Joint Lab of Human-Machine Interaction Lab, supervised by Prof. [Yanhua Long](https://teacher.shnu.edu.cn/xxjdgcxy/lyh/list.htm)
-
+- **2026.09–2031.07 (expected):** Ph.D., AI GAME LAB, jointly at Zhongguancun Academy and USTC, supervised by Prof. [Jian Zhao](https://bjzgca.edu.cn/teacher/b23c31e767844f93ae72c681f5927efd) and Prof. [Zhen-Hua Ling](http://staff.ustc.edu.cn/~zhling/#!index.md)
+- **2023.12–2026.07:** B.E., Shanghai Normal University, Unisound-SHNU Joint Lab of Human-Machine Interaction, supervised by Prof. [Yanhua Long](https://teacher.shnu.edu.cn/xxjdgcxy/lyh/list.htm)
 
 #### Research Interests
-Speech and Audio Processing, Natural Language Processing, Deep Learning, including but not limited to:
+My broad research direction is **Human Language Processing**. I am currently focusing on **Speech and Audio in Games**, including but not limited to:
 - Sound Event Detection
 - Acoustic Scene Classification
-
-#### Ph.D. Opportunities
-I am actively seeking direct Ph.D. admission opportunities in Speech, Audio and Music Processing fields. If you have any positions or know of any opportunities, please feel free to contact me via [email📧](mailto:1000530599@smail.shnu.edu.cn).
-
+- Automatic Speech Recognition
+- Text-to-Speech
+- Real-time Speech Recognition
+- Reinforcement Learning
