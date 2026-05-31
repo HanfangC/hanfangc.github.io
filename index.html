@@ -4,174 +4,213 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="senli1073" />
+    <meta name="description" content="Hanfang's personal homepage for game audio, speech interaction, and AI research." />
+    <meta name="author" content="Hanfang" />
     <title id="title"></title>
 
-    <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
 
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
     <link type="text/css" href="static/css/main.css" rel="stylesheet" />
 
-    <!-- Bootstrap core JS-->
     <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
     <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
     <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
         MathJax = {
             tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
+                packages: {},
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: false,
+                processEnvironments: true,
+                processRefs: true,
+                tags: 'all',
+                tagSide: 'right',
+                tagIndent: '0.8em',
+                useLabelIds: true,
+                maxMacros: 10000,
+                maxBuffer: 5 * 1024,
+                formatError: (jax, err) => jax.formatError(err)
             }
         };
     </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-5">
             <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
+                <span>Menu</span>
+                <span class="menu-lines" aria-hidden="true"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#page-top">Home</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#stack">Stack</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#publications">Log</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+    <header class="hero-scene" style="background-image: url('static/assets/img/hero-game-speech.png');">
+        <div class="hero-shade"></div>
+        <div class="container px-5 hero-layout">
+            <section class="hero-copy">
+                <p id="hero-eyebrow" class="eyebrow"></p>
+                <h1 id="hero-title"></h1>
+                <p id="hero-subtitle" class="hero-subtitle"></p>
+                <div class="hero-actions">
+                    <a class="action-link primary-action" href="#stack"><span>01</span> Research Stack</a>
+                    <a class="action-link" href="#publications"><span>02</span> Research Log</a>
+                </div>
+                <div class="hero-note" id="home">
+                    <h2 id="home-subtitle"></h2>
+                    <div class="main-body" id="home-md"></div>
+                    <div class="audio-ribbon compact-ribbon" aria-label="Research signal">
+                        <span>Listen</span>
+                        <span>Understand</span>
+                        <span>Speak</span>
+                        <span>Adapt</span>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="hero-portrait" aria-label="Profile">
+                <img src="static/assets/img/photo.jpg" alt="Portrait of Hanfang" />
+                <div class="portrait-meta">
+                    <span>Current Affiliation</span>
+                    <strong>Ph.D. at AI&amp;GAME Lab</strong>
+                    <small>ZGCA&amp;USTC</small>
+                    <a href="https://github.com/HanfangC" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </aside>
+        </div>
+    </header>
+
+    <main>
+        <section class="stack-section" id="stack">
+            <div class="container px-5 stack-layout">
+                <div class="section-lead">
+                    <p>Research Stack</p>
+                    <h2>One route, four connected problems.</h2>
+                </div>
+
+                <div class="stack-list">
+                    <article class="stack-row">
+                        <span class="row-index">01</span>
+                        <div>
+                            <h3>Hear the world</h3>
+                            <p>Sound event detection and acoustic scene classification for changing game environments.</p>
+                        </div>
+                        <strong>SED / ASC</strong>
+                    </article>
+                    <article class="stack-row">
+                        <span class="row-index">02</span>
+                        <div>
+                            <h3>Understand the player</h3>
+                            <p>Automatic speech recognition and spoken-language interaction for players and agents.</p>
+                        </div>
+                        <strong>ASR / Dialogue</strong>
+                    </article>
+                    <article class="stack-row">
+                        <span class="row-index">03</span>
+                        <div>
+                            <h3>Speak back naturally</h3>
+                            <p>Text-to-speech and expressive feedback that fit the timing and tone of gameplay.</p>
+                        </div>
+                        <strong>TTS / Feedback</strong>
+                    </article>
+                    <article class="stack-row">
+                        <span class="row-index">04</span>
+                        <div>
+                            <h3>React in real time</h3>
+                            <p>Low-latency pipelines and reinforcement learning for adaptive interactive agents.</p>
+                        </div>
+                        <strong>RL / Real-time</strong>
+                    </article>
+                </div>
+
+                <aside class="route-strip">
+                    <p>Route</p>
+                    <div class="route-table">
+                        <span class="route-label">Time</span>
+                        <span>2023.12 - 2026.07</span>
+                        <span>2026.09 - 2031.07</span>
+
+                        <span class="route-label">Institution</span>
+                        <strong>Shanghai Normal University</strong>
+                        <strong>Zhongguancun Academy &amp; University of Science and Technology of China</strong>
+
+                        <span class="route-label">Lab</span>
+                        <span>Unisound-SHNU Joint Lab</span>
+                        <span>ZGCA: AI&amp;GAME Lab | USTC: NERC-SLIP Lab</span>
+
+                        <span class="route-label">Advisor</span>
+                        <span>Supervised by Prof. <a href="https://teacher.shnu.edu.cn/xxjdgcxy/lyh/list.htm" target="_blank" rel="noopener">Yanhua Long</a>.</span>
+                        <span>Supervised by Prof. <a href="https://bjzgca.edu.cn/teacher/b23c31e767844f93ae72c681f5927efd" target="_blank" rel="noopener">Jian Zhao</a> and Prof. <a href="http://staff.ustc.edu.cn/~zhling/#!index.md" target="_blank" rel="noopener">Zhen-Hua Ling</a>.</span>
+                    </div>
+                </aside>
             </div>
-        </div>
-    </section>
-    <!-- Top Section -->
+        </section>
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.jpg">
-        </div>
-    </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
+        <section class="log-section" id="publications">
+            <div class="container px-5 log-layout">
+                <div class="section-lead">
+                    <p>Research Log</p>
+                    <h2>Output and milestones.</h2>
+                </div>
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
+                <div class="log-columns">
+                    <article class="log-column publications-column">
+                        <h3>Publications</h3>
+                        <div class="main-body content-surface" id="publications-md"></div>
+                    </article>
 
-        </div>
-    </section>
-    <!-- Publications  -->
+                    <article class="log-column awards-column" id="awards">
+                        <h3>Awards</h3>
+                        <div class="main-body content-surface" id="awards-md"></div>
+                    </article>
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
+                    <section id="contact" class="contact-block">
+                        <div>
+                            <h3>Contact</h3>
+                            <p>Open to game-audio and speech-AI collaborations.</p>
+                        </div>
+                        <div class="contact-links">
+                            <a href="mailto:1000530599@smail.shnu.edu.cn">1000530599@smail.shnu.edu.cn</a>
+                            <a href="mailto:l-chf@zgci.ac.cn">l-chf@zgci.ac.cn</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        </div>
-    </section>
-    <!-- Awards -->
-
-
-    <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
         <div class="container px-5">
             <div class="text-white-50 small">
                 <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/senli1073">Github</a>
+                <a id="github-link" href="https://github.com/HanfangC" target="_blank" rel="noopener">GitHub</a>
                 <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+                <a id="license-link" href="https://github.com/HanfangC/hanfang.github.io/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
