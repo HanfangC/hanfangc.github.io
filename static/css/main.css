@@ -251,8 +251,9 @@ a:hover {
 .portrait-meta strong {
     display: block;
     color: var(--ink);
-    font-size: 1.25rem;
+    font-size: 1.18rem;
     line-height: 1.55rem;
+    white-space: nowrap;
 }
 
 .portrait-meta small {
